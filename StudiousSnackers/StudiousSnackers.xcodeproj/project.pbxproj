@@ -16,6 +16,7 @@
 		8FCD0B7A2810E9D100D89D34 /* RestaurantAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B792810E9D100D89D34 /* RestaurantAPIData.swift */; };
 		8FCD0B7C2810F02800D89D34 /* RestaurantAPIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B7B2810F02800D89D34 /* RestaurantAPIStruct.swift */; };
 		8FCD0B7E28110E2C00D89D34 /* KrogerAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B7D28110E2C00D89D34 /* KrogerAPIData.swift */; };
+		8FCD0B822811D49900D89D34 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B812811D49900D89D34 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		8FCD0B792810E9D100D89D34 /* RestaurantAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIData.swift; sourceTree = "<group>"; };
 		8FCD0B7B2810F02800D89D34 /* RestaurantAPIStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIStruct.swift; sourceTree = "<group>"; };
 		8FCD0B7D28110E2C00D89D34 /* KrogerAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrogerAPIData.swift; sourceTree = "<group>"; };
+		8FCD0B812811D49900D89D34 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				8FCD0B762810E03E00D89D34 /* Restaurant API Data */,
 				8FCD0B772810E04F00D89D34 /* Kroger API Data */,
 				8FCD0B782810E05B00D89D34 /* Yelp API Data */,
+				8FCD0B7F2811D48600D89D34 /* Tab Bar Views */,
 				8F0EC57D2808A63C00F12B8B /* StudiousSnackers.xcdatamodeld */,
 				8F0EC5762808A63C00F12B8B /* Assets.xcassets */,
 				8F0EC5782808A63C00F12B8B /* Preview Content */,
@@ -104,6 +107,22 @@
 			children = (
 			);
 			path = "Yelp API Data";
+			sourceTree = "<group>";
+		};
+		8FCD0B7F2811D48600D89D34 /* Tab Bar Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FCD0B802811D49100D89D34 /* Home */,
+			);
+			path = "Tab Bar Views";
+			sourceTree = "<group>";
+		};
+		8FCD0B802811D49100D89D34 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FCD0B812811D49900D89D34 /* Home.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +201,7 @@
 				8FCD0B7A2810E9D100D89D34 /* RestaurantAPIData.swift in Sources */,
 				8FCD0B7E28110E2C00D89D34 /* KrogerAPIData.swift in Sources */,
 				8FCD0B7C2810F02800D89D34 /* RestaurantAPIStruct.swift in Sources */,
+				8FCD0B822811D49900D89D34 /* Home.swift in Sources */,
 				8F0EC57F2808A63C00F12B8B /* StudiousSnackers.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +339,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,6 +369,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
