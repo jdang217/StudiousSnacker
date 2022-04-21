@@ -16,7 +16,10 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
+    
     var body: some View {
+        var x = obtainRestaurantListFromApi()
+        //var x = obtainKrogerProductFromApi()
         NavigationView {
             List {
                 ForEach(items) { item in
