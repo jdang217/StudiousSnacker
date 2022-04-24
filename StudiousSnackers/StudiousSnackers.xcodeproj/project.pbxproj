@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D21F1D628161B2E00117DAC /* StudiousSnackers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F1D428161B2E00117DAC /* StudiousSnackers.xcdatamodeld */; };
 		8F0EC5732808A63A00F12B8B /* StudiousSnackersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */; };
 		8F0EC5752808A63A00F12B8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC5742808A63A00F12B8B /* ContentView.swift */; };
 		8F0EC5772808A63C00F12B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0EC5762808A63C00F12B8B /* Assets.xcassets */; };
 		8F0EC57A2808A63C00F12B8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0EC5792808A63C00F12B8B /* Preview Assets.xcassets */; };
 		8F0EC57C2808A63C00F12B8B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC57B2808A63C00F12B8B /* Persistence.swift */; };
-		8F0EC57F2808A63C00F12B8B /* StudiousSnackers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC57D2808A63C00F12B8B /* StudiousSnackers.xcdatamodeld */; };
 		8FCD0B7A2810E9D100D89D34 /* RestaurantAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B792810E9D100D89D34 /* RestaurantAPIData.swift */; };
 		8FCD0B7C2810F02800D89D34 /* RestaurantAPIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B7B2810F02800D89D34 /* RestaurantAPIStruct.swift */; };
 		8FCD0B7E28110E2C00D89D34 /* KrogerAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B7D28110E2C00D89D34 /* KrogerAPIData.swift */; };
@@ -20,13 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D21F1D528161B2E00117DAC /* Studious_Snackers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Studious_Snackers.xcdatamodel; sourceTree = "<group>"; };
 		8F0EC56F2808A63A00F12B8B /* StudiousSnackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudiousSnackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiousSnackersApp.swift; sourceTree = "<group>"; };
 		8F0EC5742808A63A00F12B8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8F0EC5762808A63C00F12B8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F0EC5792808A63C00F12B8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F0EC57B2808A63C00F12B8B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		8F0EC57E2808A63C00F12B8B /* StudiousSnackers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudiousSnackers.xcdatamodel; sourceTree = "<group>"; };
 		8FCD0B792810E9D100D89D34 /* RestaurantAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIData.swift; sourceTree = "<group>"; };
 		8FCD0B7B2810F02800D89D34 /* RestaurantAPIStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIStruct.swift; sourceTree = "<group>"; };
 		8FCD0B7D28110E2C00D89D34 /* KrogerAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrogerAPIData.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				8FCD0B772810E04F00D89D34 /* Kroger API Data */,
 				8FCD0B782810E05B00D89D34 /* Yelp API Data */,
 				8FCD0B7F2811D48600D89D34 /* Tab Bar Views */,
-				8F0EC57D2808A63C00F12B8B /* StudiousSnackers.xcdatamodeld */,
+				3D21F1D428161B2E00117DAC /* StudiousSnackers.xcdatamodeld */,
 				8F0EC5762808A63C00F12B8B /* Assets.xcassets */,
 				8F0EC5782808A63C00F12B8B /* Preview Content */,
 			);
@@ -202,7 +202,7 @@
 				8FCD0B7E28110E2C00D89D34 /* KrogerAPIData.swift in Sources */,
 				8FCD0B7C2810F02800D89D34 /* RestaurantAPIStruct.swift in Sources */,
 				8FCD0B822811D49900D89D34 /* Home.swift in Sources */,
-				8F0EC57F2808A63C00F12B8B /* StudiousSnackers.xcdatamodeld in Sources */,
+				3D21F1D628161B2E00117DAC /* StudiousSnackers.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,13 +409,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8F0EC57D2808A63C00F12B8B /* StudiousSnackers.xcdatamodeld */ = {
+		3D21F1D428161B2E00117DAC /* StudiousSnackers.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8F0EC57E2808A63C00F12B8B /* StudiousSnackers.xcdatamodel */,
+				3D21F1D528161B2E00117DAC /* Studious_Snackers.xcdatamodel */,
 			);
-			currentVersion = 8F0EC57E2808A63C00F12B8B /* StudiousSnackers.xcdatamodel */;
-			path = StudiousSnackers.xcdatamodeld;
+			currentVersion = 3D21F1D528161B2E00117DAC /* Studious_Snackers.xcdatamodel */;
+			name = StudiousSnackers.xcdatamodeld;
+			path = "../../../Desktop/IOS Dev/Studious Snackers/Studious Snackers/StudiousSnackers.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
