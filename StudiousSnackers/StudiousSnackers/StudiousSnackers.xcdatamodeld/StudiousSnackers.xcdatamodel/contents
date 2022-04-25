@@ -2,9 +2,11 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Cuisine" representedClassName=".Cuisine" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="cuisines" inverseEntity="Restaurant"/>
     </entity>
     <entity name="DietaryRestrictions" representedClassName=".DietaryRestrictions" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="dietaryRestrictions" inverseEntity="Restaurant"/>
     </entity>
     <entity name="Hours" representedClassName=".Hours" syncable="YES">
         <attribute name="friday" optional="YES" attributeType="String"/>
@@ -14,20 +16,30 @@
         <attribute name="thursday" optional="YES" attributeType="String"/>
         <attribute name="tuesday" optional="YES" attributeType="String"/>
         <attribute name="wednesday" optional="YES" attributeType="String"/>
+        <relationship name="restaurant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="hours" inverseEntity="Restaurant"/>
     </entity>
     <entity name="Photo" representedClassName=".Photo" syncable="YES">
         <attribute name="url" optional="YES" attributeType="String"/>
+        <relationship name="restaurant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="photo" inverseEntity="Restaurant"/>
     </entity>
     <entity name="Restaurant" representedClassName=".Restaurant" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="des_cription" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="price_level" optional="YES" attributeType="String"/>
         <attribute name="rating" optional="YES" attributeType="String"/>
         <attribute name="websiteUrl" optional="YES" attributeType="String"/>
+        <relationship name="cuisines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cuisine" inverseName="restaurants" inverseEntity="Cuisine"/>
+        <relationship name="dietaryRestrictions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DietaryRestrictions" inverseName="restaurants" inverseEntity="DietaryRestrictions"/>
+        <relationship name="hours" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hours" inverseName="restaurant" inverseEntity="Hours"/>
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="restaurant" inverseEntity="Photo"/>
     </entity>
     <elements>
-        <element name="Cuisine" positionX="-63" positionY="-9" width="128" height="44"/>
-        <element name="DietaryRestrictions" positionX="-63" positionY="0" width="128" height="44"/>
-        <element name="Hours" positionX="-54" positionY="9" width="128" height="134"/>
-        <element name="Photo" positionX="-36" positionY="72" width="128" height="44"/>
-        <element name="Restaurant" positionX="-18" positionY="81" width="128" height="74"/>
+        <element name="Cuisine" positionX="-63" positionY="-9" width="128" height="59"/>
+        <element name="DietaryRestrictions" positionX="-63" positionY="0" width="128" height="59"/>
+        <element name="Hours" positionX="-54" positionY="9" width="128" height="149"/>
+        <element name="Photo" positionX="-36" positionY="72" width="128" height="59"/>
+        <element name="Restaurant" positionX="-18" positionY="81" width="128" height="194"/>
     </elements>
 </model>
