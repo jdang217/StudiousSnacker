@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74829DFD281624B0000551E1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829DFC281624B0000551E1 /* LoginView.swift */; };
+		74829E002816252B000551E1 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829DFF2816252B000551E1 /* UserAuthentication.swift */; };
+		74829E03281625A2000551E1 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829E02281625A2000551E1 /* ResetPassword.swift */; };
+		74829E052816275F000551E1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829E042816275F000551E1 /* MainView.swift */; };
 		8F0EC5732808A63A00F12B8B /* StudiousSnackersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */; };
 		8F0EC5752808A63A00F12B8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC5742808A63A00F12B8B /* ContentView.swift */; };
 		8F0EC5772808A63C00F12B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0EC5762808A63C00F12B8B /* Assets.xcassets */; };
@@ -16,10 +20,14 @@
 		8FCD0B7A2810E9D100D89D34 /* RestaurantAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B792810E9D100D89D34 /* RestaurantAPIData.swift */; };
 		8FCD0B7C2810F02800D89D34 /* RestaurantAPIStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B7B2810F02800D89D34 /* RestaurantAPIStruct.swift */; };
 		8FCD0B7E28110E2C00D89D34 /* KrogerAPIData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B7D28110E2C00D89D34 /* KrogerAPIData.swift */; };
-		8FCD0B822811D49900D89D34 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B812811D49900D89D34 /* Home.swift */; };
+		8FCD0B822811D49900D89D34 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD0B812811D49900D89D34 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74829DFC281624B0000551E1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		74829DFF2816252B000551E1 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		74829E02281625A2000551E1 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		74829E042816275F000551E1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8F0EC56F2808A63A00F12B8B /* StudiousSnackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudiousSnackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiousSnackersApp.swift; sourceTree = "<group>"; };
 		8F0EC5742808A63A00F12B8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,7 +38,7 @@
 		8FCD0B792810E9D100D89D34 /* RestaurantAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIData.swift; sourceTree = "<group>"; };
 		8FCD0B7B2810F02800D89D34 /* RestaurantAPIStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIStruct.swift; sourceTree = "<group>"; };
 		8FCD0B7D28110E2C00D89D34 /* KrogerAPIData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrogerAPIData.swift; sourceTree = "<group>"; };
-		8FCD0B812811D49900D89D34 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8FCD0B812811D49900D89D34 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74829DFB28162408000551E1 /* Startup Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F0EC5742808A63A00F12B8B /* ContentView.swift */,
+				74829DFC281624B0000551E1 /* LoginView.swift */,
+				74829E02281625A2000551E1 /* ResetPassword.swift */,
+				74829E042816275F000551E1 /* MainView.swift */,
+			);
+			path = "Startup Views";
+			sourceTree = "<group>";
+		};
+		74829DFE28162510000551E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74829DFF2816252B000551E1 /* UserAuthentication.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8F0EC5662808A63A00F12B8B = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */,
-				8F0EC5742808A63A00F12B8B /* ContentView.swift */,
 				8F0EC57B2808A63C00F12B8B /* Persistence.swift */,
 				8FCD0B762810E03E00D89D34 /* Restaurant API Data */,
 				8FCD0B772810E04F00D89D34 /* Kroger API Data */,
+				74829DFE28162510000551E1 /* Supporting Files */,
+				74829DFB28162408000551E1 /* Startup Views */,
 				8FCD0B7F2811D48600D89D34 /* Tab Bar Views */,
 				8F3F39F328161E3800D70709 /* StudiousSnackers.xcdatamodeld */,
 				8F0EC5762808A63C00F12B8B /* Assets.xcassets */,
@@ -104,17 +132,17 @@
 		8FCD0B7F2811D48600D89D34 /* Tab Bar Views */ = {
 			isa = PBXGroup;
 			children = (
-				8FCD0B802811D49100D89D34 /* Home */,
+				8FCD0B802811D49100D89D34 /* Settings */,
 			);
 			path = "Tab Bar Views";
 			sourceTree = "<group>";
 		};
-		8FCD0B802811D49100D89D34 /* Home */ = {
+		8FCD0B802811D49100D89D34 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				8FCD0B812811D49900D89D34 /* Home.swift */,
+				8FCD0B812811D49900D89D34 /* Settings.swift */,
 			);
-			path = Home;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +174,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "Jason Dang, Catalina Lemus, and Fariha Rafa";
 				TargetAttributes = {
 					8F0EC56E2808A63A00F12B8B = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -187,13 +216,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74829E002816252B000551E1 /* UserAuthentication.swift in Sources */,
+				74829E052816275F000551E1 /* MainView.swift in Sources */,
 				8F0EC57C2808A63C00F12B8B /* Persistence.swift in Sources */,
 				8F0EC5752808A63A00F12B8B /* ContentView.swift in Sources */,
+				74829DFD281624B0000551E1 /* LoginView.swift in Sources */,
 				8F0EC5732808A63A00F12B8B /* StudiousSnackersApp.swift in Sources */,
+				74829E03281625A2000551E1 /* ResetPassword.swift in Sources */,
 				8FCD0B7A2810E9D100D89D34 /* RestaurantAPIData.swift in Sources */,
 				8FCD0B7E28110E2C00D89D34 /* KrogerAPIData.swift in Sources */,
 				8FCD0B7C2810F02800D89D34 /* RestaurantAPIStruct.swift in Sources */,
-				8FCD0B822811D49900D89D34 /* Home.swift in Sources */,
+				8FCD0B822811D49900D89D34 /* Settings.swift in Sources */,
 				8F3F39F528161E3800D70709 /* StudiousSnackers.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
