@@ -9,6 +9,36 @@ import SwiftUI
 
 public struct RestaurantAPIStruct: Decodable {
    
+    var location_id: Int
+    var name: String
+    var latitude: Double
+    var longitude: Double
+    var rating: Double
+    var price: String
+    var description: String
+    var phone: String
+    var websiteUrl: String
+    var address: String
+    var hours: HoursStruct
+    var cuisine: [CuisineStruct]
+    var dietary_restrictions: [DietaryRestrictionStruct]
+}
+
+struct HoursStruct: Decodable {
+    var sun: [Int]
+    var mon: [Int]
+    var tue: [Int]
+    var wed: [Int]
+    var thu: [Int]
+    var fri: [Int]
+    var sat: [Int]
+}
+
+struct CuisineStruct: Decodable {
+    var name: String
+}
+
+struct DietaryRestrictionStruct: Decodable {
     var name: String
 }
 
