@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D21F1D528161B2E00117DAC /* Studious_Snackers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Studious_Snackers.xcdatamodel; sourceTree = "<group>"; };
+		3D21F1D528161B2E00117DAC /* StudiousSnackers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StudiousSnackers.xcodeproj; path = ../../../../../StudiousSnacker/StudiousSnackers/StudiousSnackers.xcodeproj; sourceTree = "<group>"; };
 		8F0EC56F2808A63A00F12B8B /* StudiousSnackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudiousSnackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiousSnackersApp.swift; sourceTree = "<group>"; };
 		8F0EC5742808A63A00F12B8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -412,9 +412,9 @@
 		3D21F1D428161B2E00117DAC /* StudiousSnackers.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3D21F1D528161B2E00117DAC /* Studious_Snackers.xcdatamodel */,
+				3D21F1D528161B2E00117DAC /* StudiousSnackers.xcodeproj */,
 			);
-			currentVersion = 3D21F1D528161B2E00117DAC /* Studious_Snackers.xcdatamodel */;
+			currentVersion = 3D21F1D528161B2E00117DAC /* StudiousSnackers.xcodeproj */;
 			name = StudiousSnackers.xcdatamodeld;
 			path = "../../../Desktop/IOS Dev/Studious Snackers/Studious Snackers/StudiousSnackers.xcdatamodeld";
 			sourceTree = "<group>";
