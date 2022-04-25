@@ -12,7 +12,8 @@ struct ContentView : View {
     @State private var userAuthenticated = false
     
     var body: some View {
-        
+        var x  = obtainRestaurantListFromApi()
+        var y = print(foundRestaurantsList)
         if userAuthenticated {
             // Foreground View
             MainView()
