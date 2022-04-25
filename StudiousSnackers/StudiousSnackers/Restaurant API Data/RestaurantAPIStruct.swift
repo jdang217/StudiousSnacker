@@ -25,13 +25,13 @@ public struct RestaurantAPIStruct: Decodable {
 }
 
 struct HoursStruct: Decodable {
-    var sun: [Int]
-    var mon: [Int]
-    var tue: [Int]
-    var wed: [Int]
-    var thu: [Int]
-    var fri: [Int]
-    var sat: [Int]
+    var mon: String
+    var tue: String
+    var wed: String
+    var thu: String
+    var fri: String
+    var sat: String
+    var sun: String
 }
 
 struct CuisineStruct: Decodable {

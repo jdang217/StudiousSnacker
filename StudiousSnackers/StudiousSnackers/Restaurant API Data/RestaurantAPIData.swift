@@ -8,6 +8,13 @@
 import Foundation
 import SwiftUI
 
+
+// Global array of API Restaurant structs
+var foundRestaurantsList = [RestaurantAPIStruct]()
+
+fileprivate var previousQuery = ""
+
+
 /*
 ***********************************************
 MARK: Decode JSON response into restaurant info
@@ -122,7 +129,6 @@ public func obtainRestaurantListFromApi() {
             let jsonResponse = try JSONSerialization.jsonObject(with: jsonDataFromApi,
                                    options: JSONSerialization.ReadingOptions.mutableContainers)
             
-            print(jsonResponse)
             //----------------------------
             // Obtain Top Level Dictionary
             //----------------------------
@@ -134,6 +140,188 @@ public func obtainRestaurantListFromApi() {
                 return
             }
             
+            //------------------------------------
+            // Obtain dictionary of "results" JSON Objects
+            //------------------------------------
+            var resultsDictionary = Dictionary<String, Any>()
+            
+            if let jsonObject = topLevelDictionary["results"] as? [String: Any] {
+                resultsDictionary = jsonObject
+            } else {
+                return
+            }
+            
+            //------------------------------------
+            // Obtain Array of "data" JSON Objects
+            //------------------------------------
+            var arrayOfDataJsonObjects = Array<Any>()
+            
+            if let jsonArray = resultsDictionary["data"] as? [Any] {
+                arrayOfDataJsonObjects = jsonArray
+            } else {
+                return
+            }
+            
+            for index in 0..<arrayOfDataJsonObjects.count {
+                //-------------------------
+                // Obtain restaurant Dictionary
+                //-------------------------
+                var restaurantDictionary = Dictionary<String, Any>()
+                
+                if let jsonDictionary = arrayOfDataJsonObjects[index] as? [String: Any] {
+                    restaurantDictionary = jsonDictionary
+                } else {
+                    return
+                }
+                
+                                
+                let location_id = (restaurantDictionary["location_id"] as! NSString).intValue
+                let name = restaurantDictionary["name"] ?? ""
+                let latitude = (restaurantDictionary["latitude"] as! NSString).doubleValue
+                let longitude = (restaurantDictionary["longitude"]as! NSString).doubleValue
+                let rating = (restaurantDictionary["rating"] as! NSString).doubleValue
+                let price = restaurantDictionary["price_level"] ?? ""
+                let description = restaurantDictionary["description"] ?? ""
+                let phone = restaurantDictionary["phone"] ?? ""
+                let websiteUrl = restaurantDictionary["website"] ?? ""
+                let address = restaurantDictionary["address"] ?? ""
+                
+                
+                
+                var hours = HoursStruct(mon: "", tue: "", wed: "", thu: "", fri: "", sat: "", sun: "")
+                //------------------------------------
+                // Obtain dictionary of "hours" JSON Objects
+                //------------------------------------
+                var hoursDictionary = Dictionary<String, Any>()
+                
+                if let jsonObject = restaurantDictionary["hours"] as? [String: Any] {
+                    hoursDictionary = jsonObject
+                } else {
+                    return
+                }
+                //------------------------------------
+                // Obtain Array of "week_ranges" JSON Objects
+                //------------------------------------
+                var arrayOfWeekRangesJsonObjects = Array<Any>()
+                
+                if let jsonArray = hoursDictionary["week_ranges"] as? [Any] {
+                    arrayOfWeekRangesJsonObjects = jsonArray
+                } else {
+                    return
+                }
+                for index in 0..<arrayOfWeekRangesJsonObjects.count {
+                    //------------------------------------
+                    // Obtain Array of "currentday" JSON Objects
+                    //------------------------------------
+                    var currentDay = Array<Any>()
+                    
+                    if let jsonArray = arrayOfWeekRangesJsonObjects[index] as? [Any] {
+                        currentDay = jsonArray
+                    } else {
+                        return
+                    }
+                    //-------------------------
+                    // Obtain Open and Close Dictionary
+                    //-------------------------
+                    var openAndCloseDictionary = Dictionary<String, Any>()
+                    let isIndexValid = currentDay.indices.contains(0)
+                    if(!isIndexValid) {continue}
+                    
+                    if let jsonDictionary = currentDay[0] as? [String: Any] {
+                        openAndCloseDictionary = jsonDictionary
+                    } else {
+                        return
+                    }
+                    
+                    switch index {
+                    case 0:
+                        hours.mon = "\(openAndCloseDictionary["open_time"] ?? "")-\(openAndCloseDictionary["close_time"] ?? "")"
+                    case 1:
+                        hours.tue = "\(openAndCloseDictionary["open_time"] ?? "")-\(openAndCloseDictionary["close_time"] ?? "")"
+                    case 2:
+                        hours.wed = "\(openAndCloseDictionary["open_time"] ?? "")-\(openAndCloseDictionary["close_time"] ?? "")"
+                    case 3:
+                        hours.thu = "\(openAndCloseDictionary["open_time"] ?? "")-\(openAndCloseDictionary["close_time"] ?? "")"
+                    case 4:
+                        hours.fri = "\(openAndCloseDictionary["open_time"] ?? "")-\(openAndCloseDictionary["close_time"] ?? "")"
+                    case 5:
+                        hours.sat = "\(openAndCloseDictionary["open_time"] ?? "")-\(openAndCloseDictionary["close_time"] ?? "")"
+                    case 6:
+                        hours.sun = "\(openAndCloseDictionary["open_time"] ?? "")-\(openAndCloseDictionary["close_time"] ?? "")"
+                    default:
+                        break
+                    }
+                }
+                
+                
+                
+                var cuisine = [CuisineStruct]()
+                //------------------------------------
+                // Obtain Array of "cuisine" JSON Objects
+                //------------------------------------
+                var arrayOfCuisineJsonObjects = Array<Any>()
+                
+                if let jsonArray = restaurantDictionary["cuisine"] as? [Any] {
+                    arrayOfCuisineJsonObjects = jsonArray
+                } else {
+                    return
+                }
+                for index in 0..<arrayOfCuisineJsonObjects.count {
+                    //-------------------------
+                    // Obtain Cuisine Dictionary
+                    //-------------------------
+                    var cuisineDictionary = Dictionary<String, Any>()
+                    
+                    if let jsonDictionary = arrayOfCuisineJsonObjects[index] as? [String: Any] {
+                        cuisineDictionary = jsonDictionary
+                    } else {
+                        return
+                    }
+                    let cuisineStruct = CuisineStruct(name: cuisineDictionary["name"] as! String)
+                    cuisine.append(cuisineStruct)
+                }
+                
+                
+                var dietary = [DietaryRestrictionStruct]()
+                //------------------------------------
+                // Obtain Array of "dietary restriction" JSON Objects
+                //------------------------------------
+                var arrayOfDietaryJsonObjects = Array<Any>()
+                
+                if let jsonArray = restaurantDictionary["dietary_restrictions"] as? [Any] {
+                    arrayOfDietaryJsonObjects = jsonArray
+                } else {
+                    return
+                }
+                for index in 0..<arrayOfDietaryJsonObjects.count {
+                    //-------------------------
+                    // Obtain Dietary Dictionary
+                    //-------------------------
+                    var dietaryDictionary = Dictionary<String, Any>()
+                    
+                    if let jsonDictionary = arrayOfDietaryJsonObjects[index] as? [String: Any] {
+                        dietaryDictionary = jsonDictionary
+                    } else {
+                        return
+                    }
+                    let dietaryStruct = DietaryRestrictionStruct(name: dietaryDictionary["name"] as! String)
+                    dietary.append(dietaryStruct)
+                }
+                
+                print(location_id)
+                print(latitude)
+                print(longitude)
+                print(rating)
+                
+                print(type(of: location_id))
+                print(type(of: latitude))
+                print(type(of: longitude))
+                print(type(of: rating))
+                
+                let restaurant = RestaurantAPIStruct(location_id: Int(location_id), name: name as! String, latitude: latitude, longitude: longitude, rating: rating, price: price as! String, description: description as! String, phone: phone as! String, websiteUrl: websiteUrl as! String, address: address as! String, hours: hours, cuisine: cuisine, dietary_restrictions: dietary)
+                
+                foundRestaurantsList.append(restaurant)
+            }   //End of for loop
             
         } catch {
             semaphore.signal()
