@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D21F1FA2816253300117DAC /* FavoriteSnacksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F1F92816253200117DAC /* FavoriteSnacksList.swift */; };
+		3D21F1FE2816273200117DAC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F1FD2816273200117DAC /* MapView.swift */; };
+		3D21F2002816276B00117DAC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F1FF2816276B00117DAC /* WebView.swift */; };
+		3D21F2032816317C00117DAC /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F2022816317C00117DAC /* Restaurant.swift */; };
+		3D21F205281632BE00117DAC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F204281632BE00117DAC /* Photo.swift */; };
+		3D21F2072816339700117DAC /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F2062816339700117DAC /* Hours.swift */; };
+		3D21F2092816342800117DAC /* Cuisine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F2082816342800117DAC /* Cuisine.swift */; };
+		3D21F20B2816349500117DAC /* DietaryRestrictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F20A2816349500117DAC /* DietaryRestrictions.swift */; };
+		3D21F20E2816363800117DAC /* RestaurantsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F20D2816363800117DAC /* RestaurantsData.swift */; };
+		3D21F2102816364700117DAC /* DatabaseChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F20F2816364700117DAC /* DatabaseChange.swift */; };
 		74829DFD281624B0000551E1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829DFC281624B0000551E1 /* LoginView.swift */; };
 		74829E002816252B000551E1 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829DFF2816252B000551E1 /* UserAuthentication.swift */; };
 		74829E03281625A2000551E1 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829E02281625A2000551E1 /* ResetPassword.swift */; };
 		74829E052816275F000551E1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74829E042816275F000551E1 /* MainView.swift */; };
-		3D21F1FA2816253300117DAC /* FavoriteSnacksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F1F92816253200117DAC /* FavoriteSnacksList.swift */; };
-		3D21F1FE2816273200117DAC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F1FD2816273200117DAC /* MapView.swift */; };
-		3D21F2002816276B00117DAC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D21F1FF2816276B00117DAC /* WebView.swift */; };
 		8F0EC5732808A63A00F12B8B /* StudiousSnackersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */; };
 		8F0EC5752808A63A00F12B8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EC5742808A63A00F12B8B /* ContentView.swift */; };
 		8F0EC5772808A63C00F12B8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0EC5762808A63C00F12B8B /* Assets.xcassets */; };
@@ -27,13 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D21F1F92816253200117DAC /* FavoriteSnacksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSnacksList.swift; sourceTree = "<group>"; };
+		3D21F1FD2816273200117DAC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3D21F1FF2816276B00117DAC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		3D21F2022816317C00117DAC /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		3D21F204281632BE00117DAC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3D21F2062816339700117DAC /* Hours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		3D21F2082816342800117DAC /* Cuisine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cuisine.swift; sourceTree = "<group>"; };
+		3D21F20A2816349500117DAC /* DietaryRestrictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryRestrictions.swift; sourceTree = "<group>"; };
+		3D21F20D2816363800117DAC /* RestaurantsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsData.swift; sourceTree = "<group>"; };
+		3D21F20F2816364700117DAC /* DatabaseChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseChange.swift; sourceTree = "<group>"; };
 		74829DFC281624B0000551E1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		74829DFF2816252B000551E1 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		74829E02281625A2000551E1 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		74829E042816275F000551E1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		3D21F1F92816253200117DAC /* FavoriteSnacksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteSnacksList.swift; sourceTree = "<group>"; };
-		3D21F1FD2816273200117DAC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		3D21F1FF2816276B00117DAC /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		8F0EC56F2808A63A00F12B8B /* StudiousSnackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudiousSnackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiousSnackersApp.swift; sourceTree = "<group>"; };
 		8F0EC5742808A63A00F12B8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,17 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		74829DFB28162408000551E1 /* Startup Views */ = {
-			isa = PBXGroup;
-			children = (
-				8F0EC5742808A63A00F12B8B /* ContentView.swift */,
-				74829DFC281624B0000551E1 /* LoginView.swift */,
-				74829E02281625A2000551E1 /* ResetPassword.swift */,
-				74829E042816275F000551E1 /* MainView.swift */,
-			);
-			path = "Startup Views";
-			sourceTree = "<group>";
-		};
 		3D21F1FB2816253D00117DAC /* FavoriteSnacksList */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +85,42 @@
 			children = (
 				3D21F1FD2816273200117DAC /* MapView.swift */,
 				3D21F1FF2816276B00117DAC /* WebView.swift */,
-        74829DFF2816252B000551E1 /* UserAuthentication.swift */,
+				74829DFF2816252B000551E1 /* UserAuthentication.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D21F2012816312B00117DAC /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F0EC57B2808A63C00F12B8B /* Persistence.swift */,
+				3D21F2022816317C00117DAC /* Restaurant.swift */,
+				3D21F204281632BE00117DAC /* Photo.swift */,
+				3D21F2062816339700117DAC /* Hours.swift */,
+				3D21F2082816342800117DAC /* Cuisine.swift */,
+				3D21F20A2816349500117DAC /* DietaryRestrictions.swift */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		3D21F20C2816361200117DAC /* Restaurant Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D21F20D2816363800117DAC /* RestaurantsData.swift */,
+				3D21F20F2816364700117DAC /* DatabaseChange.swift */,
+			);
+			path = "Restaurant Data Model";
+			sourceTree = "<group>";
+		};
+		74829DFB28162408000551E1 /* Startup Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F0EC5742808A63A00F12B8B /* ContentView.swift */,
+				74829DFC281624B0000551E1 /* LoginView.swift */,
+				74829E02281625A2000551E1 /* ResetPassword.swift */,
+				74829E042816275F000551E1 /* MainView.swift */,
+			);
+			path = "Startup Views";
 			sourceTree = "<group>";
 		};
 		8F0EC5662808A63A00F12B8B = {
@@ -107,9 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				8F0EC5722808A63A00F12B8B /* StudiousSnackersApp.swift */,
-				8F0EC57B2808A63C00F12B8B /* Persistence.swift */,
 				8FCD0B762810E03E00D89D34 /* Restaurant API Data */,
 				8FCD0B772810E04F00D89D34 /* Kroger API Data */,
+				3D21F2012816312B00117DAC /* Core Data Model */,
+				3D21F20C2816361200117DAC /* Restaurant Data Model */,
 				74829DFB28162408000551E1 /* Startup Views */,
 				3D21F1FC2816268A00117DAC /* Supporting Files */,
 				8FCD0B7F2811D48600D89D34 /* Tab Bar Views */,
@@ -149,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				8FCD0B802811D49100D89D34 /* Settings */,
-				8FCD0B802811D49100D89D34 /* Home */,
 				3D21F1FB2816253D00117DAC /* FavoriteSnacksList */,
 			);
 			path = "Tab Bar Views";
@@ -234,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D21F20E2816363800117DAC /* RestaurantsData.swift in Sources */,
 				74829E002816252B000551E1 /* UserAuthentication.swift in Sources */,
+				3D21F20B2816349500117DAC /* DietaryRestrictions.swift in Sources */,
 				74829E052816275F000551E1 /* MainView.swift in Sources */,
+				3D21F2072816339700117DAC /* Hours.swift in Sources */,
 				8F0EC57C2808A63C00F12B8B /* Persistence.swift in Sources */,
 				8F0EC5752808A63A00F12B8B /* ContentView.swift in Sources */,
 				74829DFD281624B0000551E1 /* LoginView.swift in Sources */,
@@ -246,8 +285,12 @@
 				8FCD0B7E28110E2C00D89D34 /* KrogerAPIData.swift in Sources */,
 				8FCD0B7C2810F02800D89D34 /* RestaurantAPIStruct.swift in Sources */,
 				8FCD0B822811D49900D89D34 /* Settings.swift in Sources */,
+				3D21F2102816364700117DAC /* DatabaseChange.swift in Sources */,
+				3D21F205281632BE00117DAC /* Photo.swift in Sources */,
 				3D21F1FE2816273200117DAC /* MapView.swift in Sources */,
-				8FCD0B822811D49900D89D34 /* Home.swift in Sources */,
+				8FCD0B822811D49900D89D34 /* Settings.swift in Sources */,
+				3D21F2092816342800117DAC /* Cuisine.swift in Sources */,
+				3D21F2032816317C00117DAC /* Restaurant.swift in Sources */,
 				8F3F39F528161E3800D70709 /* StudiousSnackers.xcdatamodeld in Sources */,
 				3D21F2002816276B00117DAC /* WebView.swift in Sources */,
 			);

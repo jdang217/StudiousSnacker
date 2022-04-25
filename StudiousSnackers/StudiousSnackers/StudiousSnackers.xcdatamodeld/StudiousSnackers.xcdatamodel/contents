@@ -28,7 +28,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="price_level" optional="YES" attributeType="String"/>
-        <attribute name="rating" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="websiteUrl" optional="YES" attributeType="String"/>
         <relationship name="cuisines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cuisine" inverseName="restaurants" inverseEntity="Cuisine"/>
         <relationship name="dietaryRestrictions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DietaryRestrictions" inverseName="restaurants" inverseEntity="DietaryRestrictions"/>
